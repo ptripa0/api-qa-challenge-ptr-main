@@ -1,5 +1,6 @@
 # API QA Challenge: Test Plan
 -----------------------------
+Thanks for sharing the qa api challenge of given e-commerce application.
 
 ## Technical requirements :computer:
 - MacOS ⌘ or Linux :penguin:
@@ -9,12 +10,17 @@
 
 ## Test approach
 Existing testing mechanism is reused to create more unit and acceptance tests.
+Functional and Security tests were covered. There is less scope of performance testing for in memory data applications.
+Unit and System test levels were covered.
 
 Software technology stack:
-PHP 8.0.9 with PCOV 1.0.9
-PHPUnit 9.5.6
-Docker containers
+PHP 8.0.9 with PCOV 1.0.9, 
+PHPUnit 9.5.6, 
+Docker containers (PHP, Composer), 
 GitHub Actions
+
+Another approach could be to use behat BDD framework for API testing. Also, for better reporting, plugins can be used.
+Metadata import from HitHub Actions container can also be implemented as a better way to analyse test results.
 
 ## How to run the tests
 GitHub: On code checkin, github actions pipeline will trigger and test results can be viewed from container logs.
@@ -29,6 +35,7 @@ ptripa0@PrabodhPC:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04/fd746880e277b
 Tests: 100, Assertions: 143, Failures: 17, Passes: 83
 
 Please find the bug list as follows:
+
 ptripa0@PrabodhPC:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04/fd746880e277b7d49771fb48113f25e7d8a61dc4f8d805c558ac5009049aa3cc$ docker-compose run --rm api-qa
 -challenge-application vendor/bin/phpunit --coverage-html coverage --testsuite all
 
