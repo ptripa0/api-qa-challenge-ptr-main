@@ -8,10 +8,10 @@ https://docs.google.com/spreadsheets/d/13Dxfi6-ao1XjGRuylydsA8hr2bG4cYNN/edit?us
 
 
 ## Technical requirements :computer:
-- MacOS ⌘ or Linux :penguin:
-- Docker :whale2:
-- Terminal :tv:
-- Git :octocat:
+- MacOS or Linux
+- Docker
+- Terminal
+- Git
 
 ## Test approach
 Existing testing mechanism is reused to create more unit and acceptance tests.
