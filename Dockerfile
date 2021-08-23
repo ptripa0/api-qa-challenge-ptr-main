@@ -17,9 +17,10 @@ RUN cd /src
 ENTRYPOINT ["/Makefile"] ;exit 0
 RUN pwd
 RUN ls
-RUN sudo docker-compose up -d
+RUN ls -ltr
 
-RUN sudo docker-compose run --rm api-qa-challenge-application vendor/bin/phpunit --coverage-html coverage --testsuite all
+
+RUN docker-compose run --rm api-qa-challenge-application vendor/bin/phpunit --coverage-html coverage --testsuite all
 
 RUN sudo docker-compose run --rm api-qa-challenge-application vendor/bin/phpunit --testsuite unit
 
