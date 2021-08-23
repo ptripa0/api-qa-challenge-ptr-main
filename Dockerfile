@@ -1,5 +1,6 @@
 FROM php:8-alpine
 
+RUN rm -R /var/www
 RUN apk add build-base autoconf
 RUN pecl install pcov && docker-php-ext-enable pcov
 
