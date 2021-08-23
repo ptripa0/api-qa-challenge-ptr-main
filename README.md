@@ -30,6 +30,7 @@ On local machine: By executing PHPUnit tests.
 ptripa0@PrabodhPC:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04/fd746880e277b7d49771fb48113f25e7d8a61dc4f8d805c558ac5009049aa3cc$ docker-compose run --rm api-qa
 -challenge-application vendor/bin/phpunit --coverage-html coverage --testsuite all
 
+GitHub account credentials in case of resources are not accessible: ptripa0/Sgsits123
 ## Test results
 
 Tests: 100, Assertions: 143, Failures: 17, Passes: 83
