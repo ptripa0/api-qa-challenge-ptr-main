@@ -1,0 +1,27 @@
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd" bootstrap="tests/bootstrap.php"
+         forceCoversAnnotation="true" beStrictAboutOutputDuringTests="true"
+         beStrictAboutTestsThatDoNotTestAnything="true" failOnRisky="true" failOnWarning="true" colors="true"
+         verbose="true" cacheResultFile=".phpunit.result.cache">
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">src/</directory>
+        </include>
+    </coverage>
+    <testsuites>
+       <testsuite name="all">
+            <directory>tests/</directory>
+        </testsuite>
+        <testsuite name="unit">
+            <directory>tests/unit</directory>
+        </testsuite>
+        <testsuite name="acceptance">
+            <directory>tests/acceptance</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="ENVIRONMENT" value="test" force="true"/>
+        <env name="LOG_LEVEL" value="INFO" force="true"/>
+        <env name="APPLICATION_NAME" value="api-qa-challenge" force="true"/>
+    </php>
+</phpunit>

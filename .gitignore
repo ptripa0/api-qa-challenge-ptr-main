@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+*.DS_Store
+
+vendor/
+coverage/
+
+.phpunit.result.cache
+php_cs.cache

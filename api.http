@@ -1,0 +1,51 @@
+### PHPStorm file to run http request in the IDE
+
+GET http://localhost:8080/users
+Accept: application/json
+
+###
+
+GET http://localhost:8080/users/1
+Accept: application/json
+
+###
+
+GET http://localhost:8080/products
+Accept: application/json
+
+###
+
+GET http://localhost:8080/products/AOL01GG
+Accept: application/json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="mainImage"; filename="image.jpg"
+
+# Put an image.jpg in the root folder to make this work
+< ./image.jpg
+--WebAppBoundary--
+
+--WebAppBoundary
+Content-Disposition: form-data; name="sku"
+
+WED05HK
+--WebAppBoundary--
+
+--WebAppBoundary
+Content-Disposition: form-data; name="name"
+
+Test product
+--WebAppBoundary--
+
+--WebAppBoundary
+Content-Disposition: form-data; name="unitPrice"
+
+10.00
+--WebAppBoundary--
+
+###
