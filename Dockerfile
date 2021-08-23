@@ -23,5 +23,5 @@ RUN chmod 776 phpunit.xml.dist
 RUN chmod 776 bootstrap.php
 RUN chmod 776 Dockerfile
 RUN ls -ltr
-RUN docker-compose up --build	
+ENTRYPOINT /Makefile
 
