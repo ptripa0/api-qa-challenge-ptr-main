@@ -16,7 +16,7 @@ https://docs.google.com/spreadsheets/d/13Dxfi6-ao1XjGRuylydsA8hr2bG4cYNN/edit?us
 ## Test approach
 Existing testing mechanism is reused to create more unit and acceptance tests.
 Functional and Security tests were covered. There is less scope of performance testing for in memory data applications.
-Unit and System test levels were covered.
+Unit and Acceptance test levels were covered.
 
 Software technology stack:
 PHP 8.0.9 with PCOV 1.0.9, 
