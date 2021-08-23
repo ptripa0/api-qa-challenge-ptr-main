@@ -18,8 +18,8 @@ ENTRYPOINT ["/Makefile"] ;exit 0
 RUN pwd
 RUN ls
 RUN ls -ltr
-
-
+RUN chmod 776 Makefile
+RUN ls -ltr
 RUN docker-compose run --rm api-qa-challenge-application vendor/bin/phpunit --coverage-html coverage --testsuite all
 
 RUN sudo docker-compose run --rm api-qa-challenge-application vendor/bin/phpunit --testsuite unit
