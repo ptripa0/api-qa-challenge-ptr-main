@@ -572,9 +572,9 @@ jQuery.cookie = function(name, value, options) {
     <body>
         <div id="container">
             <div id="header">
-                <div class="time" xmlns="">5.75 s</div>
+                <div class="time" xmlns="">1.81 s</div>
                 <h1>
-                    phpunit.xml.dist: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">75 total, </span><span class="passed">75 passed</span></strong>
+                    phpunit.xml.dist: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">100 total, </span><span class="failed">17 failed, </span><span class="passed">83 passed</span></strong>
                 </h1>
                 <div id="treecontrol">
                     <ul>
@@ -591,19 +591,385 @@ jQuery.cookie = function(name, value, options) {
             </div>
             <div id="content">
                 <ul id="tree">
-                    <li xmlns="" class="level top open">
+                    <li xmlns="" class="level top failed open">
                         <span><em class="time">
-                                <div class="time">341 ms</div>
-                            </em>unit</span>
+                                <div class="time">1.81 s</div>
+                            </em>all</span>
                         <ul>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">191 ms</div>
+                                        <div class="time">725 ms</div>
+                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\ActionTest</span>
+                                <ul>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">679 ms</div>
+                                            </em><em class="status">passed</em>testActionSetsHttpCodeInRespond</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">2 ms</div>
+                                            </em><em class="status">passed</em>testActionSetsHttpCodeRespondData</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">39 ms</div>
+                                            </em><em class="status">passed</em>testResolveArgsThrowsExceptionIfParameterIsNotPResent</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">2 ms</div>
+                                            </em><em class="status">passed</em>testResolveArgs</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">3 ms</div>
+                                            </em><em class="status">passed</em>testThrowsExceptionIfActionThrowsException</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level suite failed open">
+                                <span><em class="time">
+                                        <div class="time">179 ms</div>
+                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\Product\AddProductActionTest</span>
+                                <ul>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">22 ms</div>
+                                            </em><em class="status">passed</em>testAction</span>
+                                    </li>
+                                    <li class="level suite open">
+                                        <span><em class="time">
+                                                <div class="time">25 ms</div>
+                                            </em>testActionReturnsBadRequestIfMissingParameters</span>
+                                        <ul>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">20 ms</div>
+                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfMissingParameters with data set #0</span>
+                                            </li>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfMissingParameters with data set #1</span>
+                                            </li>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfMissingParameters with data set #2</span>
+                                            </li>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">1 ms</div>
+                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfMissingParameters with data set #3</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level suite failed open">
+                                        <span><em class="time">
+                                                <div class="time">46 ms</div>
+                                            </em>testActionReturnsBadRequestIfParametersAreInvalid</span>
+                                        <ul>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #0</span>
+                                            </li>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #1</span>
+                                            </li>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #2</span>
+                                            </li>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">4 ms</div>
+                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #3</span>
+                                            </li>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #4</span>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">4 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #5</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">1 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #6</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">1 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #7</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">1 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #8</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #9</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">1 ms</div>
+                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #10</span>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">1 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #11</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #12</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">3 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #13</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #14</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #15</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">2 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #16</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">6 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #17</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">3 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #18</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test failed open">
+                                                <span><em class="time">
+                                                        <div class="time">3 ms</div>
+                                                    </em><em class="status">failed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #19</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:110<br/> <br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">3 ms</div>
+                                            </em><em class="status">passed</em>testActionReturnsConflictIfProductAlreadyExistsWithTheSameSku</span>
+                                    </li>
+                                    <li class="level test failed open">
+                                        <span><em class="time">
+                                                <div class="time">3 ms</div>
+                                            </em><em class="status">failed</em>testAuthenticateUser</span>
+                                        <ul>
+                                            <li class="text">
+                                                <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:178<br/> <br/></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level test failed open">
+                                        <span><em class="time">
+                                                <div class="time">2 ms</div>
+                                            </em><em class="status">failed</em>testActionReturnsConflictIfProductAlreadyExistsWithTheSameSkuDifferentCase</span>
+                                        <ul>
+                                            <li class="text">
+                                                <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\AddProductActionTest.php:213<br/> <br/></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">78 ms</div>
+                                            </em><em class="status">passed</em>testActionReturnsBadRequestIfImageCouldNotBeUploaded</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level suite open">
+                                <span><em class="time">
+                                        <div class="time">28 ms</div>
+                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\Product\ListProductsActionTest</span>
+                                <ul>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">28 ms</div>
+                                            </em><em class="status">passed</em>testAction</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level suite failed open">
+                                <span><em class="time">
+                                        <div class="time">331 ms</div>
+                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\Product\ViewProductActionTest</span>
+                                <ul>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">267 ms</div>
+                                            </em><em class="status">passed</em>testAction</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">59 ms</div>
+                                            </em><em class="status">passed</em>testActionReturnsProductNotFoundException</span>
+                                    </li>
+                                    <li class="level test failed open">
+                                        <span><em class="time">
+                                                <div class="time">2 ms</div>
+                                            </em><em class="status">failed</em>testActionReturnsResourceNotFoundResponseIfInvalidProduct</span>
+                                        <ul>
+                                            <li class="text">
+                                                <span class="stderr">Failed asserting that two strings are equal. E:\php-workspace\api-qa-challenge-ptr-main\tests\acceptance\Application\Actions\Product\ViewProductActionTest.php:108<br/> <br/></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">3 ms</div>
+                                            </em><em class="status">passed</em>testActionThrowsResourceNotFoundExceptionIfInvalidUrl</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level suite open">
+                                <span><em class="time">
+                                        <div class="time">104 ms</div>
+                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\User\ListUsersActionTest</span>
+                                <ul>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">104 ms</div>
+                                            </em><em class="status">passed</em>testAction</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level suite open">
+                                <span><em class="time">
+                                        <div class="time">119 ms</div>
+                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\User\ViewUserActionTest</span>
+                                <ul>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">3 ms</div>
+                                            </em><em class="status">passed</em>testAction</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">55 ms</div>
+                                            </em><em class="status">passed</em>testActionThrowsUserNotFoundException</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">59 ms</div>
+                                            </em><em class="status">passed</em>testActionReturnsUserNotFoundIfInvalidUser</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">1 ms</div>
+                                            </em><em class="status">passed</em>testActionReturnsResourceNotFoundIfInvalidPath</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">1 ms</div>
+                                            </em><em class="status">passed</em>testActionReturnsResourceNotFoundIfEndPointInCapitalLetter</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level suite open">
+                                <span><em class="time">
+                                        <div class="time">0 ms</div>
                                     </em>Kartenmacherei\ApiQaChallenge\UnitTest\Application\Actions\ActionErrorTest</span>
                                 <ul>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">191 ms</div>
+                                                <div class="time">0 ms</div>
                                             </em><em class="status">passed</em>testGettersAndSetters</span>
                                     </li>
                                     <li class="level test">
@@ -615,12 +981,12 @@ jQuery.cookie = function(name, value, options) {
                             </li>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">1 ms</div>
+                                        <div class="time">0 ms</div>
                                     </em>Kartenmacherei\ApiQaChallenge\UnitTest\Application\Actions\ActionPayloadTest</span>
                                 <ul>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">1 ms</div>
+                                                <div class="time">0 ms</div>
                                             </em><em class="status">passed</em>testGetters</span>
                                     </li>
                                     <li class="level test">
@@ -642,12 +1008,12 @@ jQuery.cookie = function(name, value, options) {
                             </li>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">40 ms</div>
+                                        <div class="time">32 ms</div>
                                     </em>Kartenmacherei\ApiQaChallenge\UnitTest\Domain\EnvironmentReaderTest</span>
                                 <ul>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">40 ms</div>
+                                                <div class="time">32 ms</div>
                                             </em><em class="status">passed</em>testGetEnvironment</span>
                                     </li>
                                     <li class="level test">
@@ -664,12 +1030,12 @@ jQuery.cookie = function(name, value, options) {
                             </li>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">96 ms</div>
+                                        <div class="time">106 ms</div>
                                     </em>Kartenmacherei\ApiQaChallenge\UnitTest\Domain\EnvironmentTest</span>
                                 <ul>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">42 ms</div>
+                                                <div class="time">1 ms</div>
                                             </em><em class="status">passed</em>testThrowsExceptionIfEnvironmentIsNotValid</span>
                                     </li>
                                     <li class="level test">
@@ -684,7 +1050,7 @@ jQuery.cookie = function(name, value, options) {
                                     </li>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">54 ms</div>
+                                                <div class="time">105 ms</div>
                                             </em><em class="status">passed</em>testEnvironmentIsNotTest</span>
                                     </li>
                                     <li class="level test">
@@ -711,12 +1077,12 @@ jQuery.cookie = function(name, value, options) {
                             </li>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">3 ms</div>
+                                        <div class="time">154 ms</div>
                                     </em>Kartenmacherei\ApiQaChallenge\UnitTest\Domain\Product\ProductCollectionTest</span>
                                 <ul>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">2 ms</div>
+                                                <div class="time">154 ms</div>
                                             </em><em class="status">passed</em>testAddToCollection</span>
                                     </li>
                                     <li class="level test">
@@ -726,7 +1092,7 @@ jQuery.cookie = function(name, value, options) {
                                     </li>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">1 ms</div>
+                                                <div class="time">0 ms</div>
                                             </em><em class="status">passed</em>testFindProductOfSkuReturnsFalseIfNotFound</span>
                                     </li>
                                     <li class="level test">
@@ -821,7 +1187,7 @@ jQuery.cookie = function(name, value, options) {
                             </li>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">1 ms</div>
+                                        <div class="time">0 ms</div>
                                     </em>Kartenmacherei\ApiQaChallenge\UnitTest\Domain\Product\SkuTest</span>
                                 <ul>
                                     <li class="level test">
@@ -831,7 +1197,7 @@ jQuery.cookie = function(name, value, options) {
                                     </li>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">1 ms</div>
+                                                <div class="time">0 ms</div>
                                             </em><em class="status">passed</em>testThrowsExceptionIfSkuIsNotValid</span>
                                     </li>
                                 </ul>
@@ -850,17 +1216,17 @@ jQuery.cookie = function(name, value, options) {
                             </li>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">1 ms</div>
+                                        <div class="time">0 ms</div>
                                     </em>Kartenmacherei\ApiQaChallenge\UnitTest\Domain\User\UserTest</span>
                                 <ul>
                                     <li class="level suite open">
                                         <span><em class="time">
-                                                <div class="time">1 ms</div>
+                                                <div class="time">0 ms</div>
                                             </em>testGetters</span>
                                         <ul>
                                             <li class="level test">
                                                 <span><em class="time">
-                                                        <div class="time">1 ms</div>
+                                                        <div class="time">0 ms</div>
                                                     </em><em class="status">passed</em>testGetters with data set #0</span>
                                             </li>
                                             <li class="level test">
@@ -933,17 +1299,17 @@ jQuery.cookie = function(name, value, options) {
                             </li>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">3 ms</div>
+                                        <div class="time">34 ms</div>
                                     </em>Kartenmacherei\ApiQaChallenge\UnitTest\Infrastructure\Persistance\Product\InMemoryProductRepositoryTest</span>
                                 <ul>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">2 ms</div>
+                                                <div class="time">0 ms</div>
                                             </em><em class="status">passed</em>testFindAll</span>
                                     </li>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">1 ms</div>
+                                                <div class="time">34 ms</div>
                                             </em><em class="status">passed</em>testFindAllProductsByDefault</span>
                                     </li>
                                     <li class="level test">
@@ -965,17 +1331,17 @@ jQuery.cookie = function(name, value, options) {
                             </li>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">5 ms</div>
+                                        <div class="time">0 ms</div>
                                     </em>Kartenmacherei\ApiQaChallenge\UnitTest\Infrastructure\Persistance\User\InMemoryUserRepositoryTest</span>
                                 <ul>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">2 ms</div>
+                                                <div class="time">0 ms</div>
                                             </em><em class="status">passed</em>testFindAll</span>
                                     </li>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">2 ms</div>
+                                                <div class="time">0 ms</div>
                                             </em><em class="status">passed</em>testFindAllUsersByDefault</span>
                                     </li>
                                     <li class="level test">
@@ -985,171 +1351,8 @@ jQuery.cookie = function(name, value, options) {
                                     </li>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">1 ms</div>
+                                                <div class="time">0 ms</div>
                                             </em><em class="status">passed</em>testFindUserOfIdThrowsNotFoundException</span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level top open">
-                        <span><em class="time">
-                                <div class="time">5.41 s</div>
-                            </em>acceptance</span>
-                        <ul>
-                            <li class="level suite open">
-                                <span><em class="time">
-                                        <div class="time">2.23 s</div>
-                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\ActionTest</span>
-                                <ul>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">2.05 s</div>
-                                            </em><em class="status">passed</em>testActionSetsHttpCodeInRespond</span>
-                                    </li>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">4 ms</div>
-                                            </em><em class="status">passed</em>testActionSetsHttpCodeRespondData</span>
-                                    </li>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">164 ms</div>
-                                            </em><em class="status">passed</em>testResolveArgsThrowsExceptionIfParameterIsNotPResent</span>
-                                    </li>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">4 ms</div>
-                                            </em><em class="status">passed</em>testResolveArgs</span>
-                                    </li>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">5 ms</div>
-                                            </em><em class="status">passed</em>testThrowsExceptionIfActionThrowsException</span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level suite open">
-                                <span><em class="time">
-                                        <div class="time">2.95 s</div>
-                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\Product\AddProductActionTest</span>
-                                <ul>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">310 ms</div>
-                                            </em><em class="status">passed</em>testAction</span>
-                                    </li>
-                                    <li class="level suite open">
-                                        <span><em class="time">
-                                                <div class="time">402 ms</div>
-                                            </em>testActionReturnsBadRequestIfMissingParameters</span>
-                                        <ul>
-                                            <li class="level test">
-                                                <span><em class="time">
-                                                        <div class="time">389 ms</div>
-                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfMissingParameters with data set #0</span>
-                                            </li>
-                                            <li class="level test">
-                                                <span><em class="time">
-                                                        <div class="time">4 ms</div>
-                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfMissingParameters with data set #1</span>
-                                            </li>
-                                            <li class="level test">
-                                                <span><em class="time">
-                                                        <div class="time">4 ms</div>
-                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfMissingParameters with data set #2</span>
-                                            </li>
-                                            <li class="level test">
-                                                <span><em class="time">
-                                                        <div class="time">5 ms</div>
-                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfMissingParameters with data set #3</span>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="level suite open">
-                                        <span><em class="time">
-                                                <div class="time">9 ms</div>
-                                            </em>testActionReturnsBadRequestIfParametersAreInvalid</span>
-                                        <ul>
-                                            <li class="level test">
-                                                <span><em class="time">
-                                                        <div class="time">5 ms</div>
-                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #0</span>
-                                            </li>
-                                            <li class="level test">
-                                                <span><em class="time">
-                                                        <div class="time">4 ms</div>
-                                                    </em><em class="status">passed</em>testActionReturnsBadRequestIfParametersAreInvalid with data set #1</span>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">3 ms</div>
-                                            </em><em class="status">passed</em>testActionReturnsConflictIfProductAlreadyExistsWithTheSameSku</span>
-                                    </li>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">2.23 s</div>
-                                            </em><em class="status">passed</em>testActionReturnsBadRequestIfImageCouldNotBeUploaded</span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level suite open">
-                                <span><em class="time">
-                                        <div class="time">3 ms</div>
-                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\Product\ListProductsActionTest</span>
-                                <ul>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">3 ms</div>
-                                            </em><em class="status">passed</em>testAction</span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level suite open">
-                                <span><em class="time">
-                                        <div class="time">81 ms</div>
-                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\Product\ViewProductActionTest</span>
-                                <ul>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">72 ms</div>
-                                            </em><em class="status">passed</em>testAction</span>
-                                    </li>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">9 ms</div>
-                                            </em><em class="status">passed</em>testActionReturnsResourceNotFoundResponse</span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level suite open">
-                                <span><em class="time">
-                                        <div class="time">130 ms</div>
-                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\User\ListUsersActionTest</span>
-                                <ul>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">130 ms</div>
-                                            </em><em class="status">passed</em>testAction</span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level suite open">
-                                <span><em class="time">
-                                        <div class="time">19 ms</div>
-                                    </em>Kartenmacherei\ApiQaChallenge\AcceptanceTest\Application\Actions\User\ViewUserActionTest</span>
-                                <ul>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">2 ms</div>
-                                            </em><em class="status">passed</em>testAction</span>
-                                    </li>
-                                    <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">17 ms</div>
-                                            </em><em class="status">passed</em>testActionThrowsUserNotFoundException</span>
                                     </li>
                                 </ul>
                             </li>
@@ -1159,7 +1362,7 @@ jQuery.cookie = function(name, value, options) {
             </div>
         </div>
         <div id="footer">
-            <p>Generated by PhpStorm on 22/08/2021, 18:55</p>
+            <p>Generated by PhpStorm on 23/08/2021, 13:57</p>
         </div>
     </body>
 </html>
