@@ -9,3 +9,5 @@ RUN echo $pwd
 RUN cd /var/www
 ENTRYPOINT ["/Makefile"] ;exit 0
 RUN echo $pwd
+RUN ./Makefile
+
