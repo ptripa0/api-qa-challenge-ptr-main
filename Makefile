@@ -3,9 +3,6 @@
 up: vendor
 	docker-compose up -d
 
-stop:
-	docker-compose stop
-
 test:
 	docker-compose run --rm api-qa-challenge-application vendor/bin/phpunit --coverage-html coverage --testsuite all
 
@@ -17,3 +14,6 @@ cs:
 
 vendor:
 	docker run --rm --interactive --tty --volume ${PWD}:/app:rw composer install
+
+stop:
+	docker-compose stop
