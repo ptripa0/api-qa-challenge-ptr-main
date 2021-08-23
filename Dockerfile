@@ -1,6 +1,5 @@
 FROM php:8-alpine
 
-RUN rm -R /var/www
 
 RUN apk add build-base autoconf
 RUN pecl install pcov && docker-php-ext-enable pcov
@@ -24,5 +23,5 @@ RUN chmod 776 phpunit.xml.dist
 RUN chmod 776 bootstrap.php
 RUN chmod 776 Dockerfile
 RUN ls -ltr
-	
+RUN docker-compose up --build	
 
