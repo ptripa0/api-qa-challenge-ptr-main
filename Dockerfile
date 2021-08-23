@@ -5,5 +5,5 @@ RUN pecl install pcov && docker-php-ext-enable pcov
 
 WORKDIR /var/www
 
-ENTRYPOINT ["/var/www", "/Makefile"]
+ENTRYPOINT ["/Makefile"]
 RUN ["chmod", "+x", "/Makefile"]
