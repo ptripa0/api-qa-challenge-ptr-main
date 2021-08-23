@@ -13,7 +13,7 @@ cs:
 	docker run --rm -v $(CURDIR):/var/www:rw 047136756731.dkr.ecr.eu-central-1.amazonaws.com/kam-cs:4.0.4
 
 vendor:
-	docker run --rm --interactive --tty --volume ${PWD}:/app:rw composer install
+	docker run --rm --interactive -i --volume ${PWD}:/app:rw composer install
 
 stop:
 	docker-compose stop
