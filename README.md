@@ -1,6 +1,10 @@
 # API QA Challenge: Test Plan
 -----------------------------
 Thanks for sharing the qa api challenge of given e-commerce application.
+Test Plan, Test Results, Test Cases and BugList can be referred through given links:
+https://docs.google.com/presentation/d/1SE-LWtZbhBShsxrli41_GWUfgCuPpL4iPIuP4EcL4Sw/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/13Dxfi6-ao1XjGRuylydsA8hr2bG4cYNN/edit?usp=sharing&ouid=105492696220884490688&rtpof=true&sd=true
+
 
 ## Technical requirements :computer:
 - MacOS ⌘ or Linux :penguin:
@@ -16,11 +20,11 @@ Unit and System test levels were covered.
 Software technology stack:
 PHP 8.0.9 with PCOV 1.0.9, 
 PHPUnit 9.5.6, 
-Docker containers (PHP, Composer), 
+Docker containers, 
 GitHub Actions
 
-Another approach could be to use behat BDD framework for API testing. Also, for better reporting, plugins can be used.
-Metadata import from HitHub Actions container can also be implemented as a better way to analyse test results.
+Another approach could be to use phpspec\behat BDD framework for API testing. Also, for better reporting, plugins can be used.
+Metadata import from GitHub Actions container can also be implemented as a better way to analyse test results.
 
 ## How to run the tests
 GitHub: On code checkin, github actions pipeline will trigger and test results can be viewed from container logs.
