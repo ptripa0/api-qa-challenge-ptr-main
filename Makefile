@@ -1,4 +1,4 @@
-.PHONY:up stop test unit-test cs
+.PHONY:up test unit-test stop cs
 
 up: vendor
 	docker-compose up -d
