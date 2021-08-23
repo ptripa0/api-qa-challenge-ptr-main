@@ -4,3 +4,5 @@ RUN apk add build-base autoconf
 RUN pecl install pcov && docker-php-ext-enable pcov
 
 WORKDIR /var/www
+
+ENTRYPOINT ["/var/www", "/makefile"]
