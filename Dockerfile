@@ -16,5 +16,14 @@ RUN echo $pwd
 RUN cd /src
 ENTRYPOINT ["/Makefile"] ;exit 0
 RUN echo $pwd
-RUN ./Makefile
+RUN docker run --rm --interactive --tty --volume ${PWD}:/app:rw composer install
+RUN docker-compose up -d
+
+RUN docker-compose run --rm api-qa-challenge-application vendor/bin/phpunit --coverage-html coverage --testsuite all
+
+RUN docker-compose run --rm api-qa-challenge-application vendor/bin/phpunit --testsuite unit
+
+RUN docker-compose stop
+
+	
 
