@@ -9,11 +9,11 @@ To create unit and acceptance tests for a php application.
 Functional and Security tests are covered.
 
 
-Software technology stack:
-PHP 8.0.9 with PCOV 1.0.9, 
-PHPUnit 9.5.6, 
-Docker containers, 
-GitHub Actions
+## Software technology stack:
+- PHP 8.0.9 with PCOV 1.0.9, 
+- PHPUnit 9.5.6, 
+- Docker containers, 
+- GitHub Actions
 
 
 ## How to run the tests
